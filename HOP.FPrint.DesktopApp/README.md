@@ -1,0 +1,1 @@
+.NET Core Desktop App for comunicate with arduiono and HoP SPA
