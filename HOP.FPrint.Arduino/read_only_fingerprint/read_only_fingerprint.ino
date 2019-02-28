@@ -116,7 +116,7 @@ uint8_t getFingerprintID() {
     return p;
   }   
   
-  Serial.print(finger.fingerID); 
+  Serial.print(finger.fingerID); Serial.println("");
 
   return finger.fingerID;
 }
@@ -132,7 +132,7 @@ int getFingerprintIDez() {
   p = finger.fingerFastSearch();
   if (p != FINGERPRINT_OK)  return -1;
   
-  Serial.println(finger.fingerID); 
+  Serial.print(finger.fingerID); Serial.println();
   
   return finger.fingerID; 
 }

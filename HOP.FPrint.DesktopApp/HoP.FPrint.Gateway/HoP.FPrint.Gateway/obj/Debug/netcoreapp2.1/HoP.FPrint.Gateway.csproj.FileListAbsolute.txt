@@ -1,0 +1,11 @@
+C:\WORK\hakatonsFPrintHoP\HOP.FPrint.DesktopApp\HoP.FPrint.Gateway\HoP.FPrint.Gateway\bin\Debug\netcoreapp2.1\HoP.FPrint.Gateway.deps.json
+C:\WORK\hakatonsFPrintHoP\HOP.FPrint.DesktopApp\HoP.FPrint.Gateway\HoP.FPrint.Gateway\bin\Debug\netcoreapp2.1\HoP.FPrint.Gateway.runtimeconfig.json
+C:\WORK\hakatonsFPrintHoP\HOP.FPrint.DesktopApp\HoP.FPrint.Gateway\HoP.FPrint.Gateway\bin\Debug\netcoreapp2.1\HoP.FPrint.Gateway.runtimeconfig.dev.json
+C:\WORK\hakatonsFPrintHoP\HOP.FPrint.DesktopApp\HoP.FPrint.Gateway\HoP.FPrint.Gateway\bin\Debug\netcoreapp2.1\HoP.FPrint.Gateway.dll
+C:\WORK\hakatonsFPrintHoP\HOP.FPrint.DesktopApp\HoP.FPrint.Gateway\HoP.FPrint.Gateway\bin\Debug\netcoreapp2.1\HoP.FPrint.Gateway.pdb
+C:\WORK\hakatonsFPrintHoP\HOP.FPrint.DesktopApp\HoP.FPrint.Gateway\HoP.FPrint.Gateway\obj\Debug\netcoreapp2.1\HoP.FPrint.Gateway.csprojAssemblyReference.cache
+C:\WORK\hakatonsFPrintHoP\HOP.FPrint.DesktopApp\HoP.FPrint.Gateway\HoP.FPrint.Gateway\obj\Debug\netcoreapp2.1\HoP.FPrint.Gateway.csproj.CoreCompileInputs.cache
+C:\WORK\hakatonsFPrintHoP\HOP.FPrint.DesktopApp\HoP.FPrint.Gateway\HoP.FPrint.Gateway\obj\Debug\netcoreapp2.1\HoP.FPrint.Gateway.AssemblyInfoInputs.cache
+C:\WORK\hakatonsFPrintHoP\HOP.FPrint.DesktopApp\HoP.FPrint.Gateway\HoP.FPrint.Gateway\obj\Debug\netcoreapp2.1\HoP.FPrint.Gateway.AssemblyInfo.cs
+C:\WORK\hakatonsFPrintHoP\HOP.FPrint.DesktopApp\HoP.FPrint.Gateway\HoP.FPrint.Gateway\obj\Debug\netcoreapp2.1\HoP.FPrint.Gateway.dll
+C:\WORK\hakatonsFPrintHoP\HOP.FPrint.DesktopApp\HoP.FPrint.Gateway\HoP.FPrint.Gateway\obj\Debug\netcoreapp2.1\HoP.FPrint.Gateway.pdb

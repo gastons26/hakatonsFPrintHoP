@@ -1,0 +1,47 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\WORK\\hakatonsFPrintHoP\\HOP.FPrint.DesktopApp\\HoP.FPrint.Gateway\\HoP.FPrint.Gateway\\HoP.FPrint.Gateway.csproj",
+    "projectName": "HoP.FPrint.Gateway",
+    "projectPath": "C:\\WORK\\hakatonsFPrintHoP\\HOP.FPrint.DesktopApp\\HoP.FPrint.Gateway\\HoP.FPrint.Gateway\\HoP.FPrint.Gateway.csproj",
+    "outputPath": "C:\\WORK\\hakatonsFPrintHoP\\HOP.FPrint.DesktopApp\\HoP.FPrint.Gateway\\HoP.FPrint.Gateway\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.1"
+    ],
+    "frameworks": {
+      "netcoreapp2.1": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.1": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.0, )",
+          "autoReferenced": true
+        },
+        "System.IO.Ports": {
+          "target": "Package",
+          "version": "[4.5.0, )"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}
