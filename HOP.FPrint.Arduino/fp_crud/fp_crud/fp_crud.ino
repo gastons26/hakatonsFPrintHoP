@@ -81,7 +81,7 @@ void loop() {
 uint8_t getFingerprintEnroll() {
 
   int p = -1;
-  Serial.print(INFO+"Waiting for valid finger to enroll as #"); Serial.println(id);
+  Serial.println(INFO+"Waiting for valid finger to enroll");
   while (p != FINGERPRINT_OK) {
     p = finger.getImage();
     switch (p) {
