@@ -14,7 +14,7 @@ namespace HoP.FPrint.Gateway.FingerPrintApi.Controllers
         {
             FPrintSerialPortService.SetOperation(FPrintOperationTypes.C);
             FPrintSerialPortService.SendMessageToSerialPort("21");
-            return Ok("Start");
+            return Ok("Lūdzu novietojiet pirkstu uz skenera");
         }
         
         [HttpGet]

@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab4d5e55-2695-436a-9eec-7bf94bed0d7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HoP.FPrint.Gateway/FPrintSerialPort/Enums/FPrintOperationTypes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HoP.FPrint.Gateway/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HoP.FPrint.Gateway/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HoP.FPrint.Gateway/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HoP.FPrint.Gateway/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HoP.FPrint.Gateway/FPrintSerialPort/Interfaces/IFPrintSerialPortService.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/HoP.FPrint.Gateway/FPrintSerialPort/Services/FPrintSerialPortService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HoP.FPrint.Gateway/FPrintSerialPort/Services/FPrintSerialPortService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HoP.FPrint.Gateway/FingerPrintApi/Controllers/FingerPrintApiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HoP.FPrint.Gateway/FingerPrintApi/Controllers/FingerPrintApiController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HoP.FPrint.Gateway/bin/Debug/netcoreapp2.1/HoP.FPrint.Gateway.dll" beforeDir="false" afterPath="$PROJECT_DIR$/HoP.FPrint.Gateway/bin/Debug/netcoreapp2.1/HoP.FPrint.Gateway.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HoP.FPrint.Gateway/bin/Debug/netcoreapp2.1/HoP.FPrint.Gateway.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/HoP.FPrint.Gateway/bin/Debug/netcoreapp2.1/HoP.FPrint.Gateway.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HoP.FPrint.Gateway/obj/Debug/netcoreapp2.1/HoP.FPrint.Gateway.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/HoP.FPrint.Gateway/obj/Debug/netcoreapp2.1/HoP.FPrint.Gateway.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HoP.FPrint.Gateway/obj/Debug/netcoreapp2.1/HoP.FPrint.Gateway.dll" beforeDir="false" afterPath="$PROJECT_DIR$/HoP.FPrint.Gateway/obj/Debug/netcoreapp2.1/HoP.FPrint.Gateway.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HoP.FPrint.Gateway/obj/Debug/netcoreapp2.1/HoP.FPrint.Gateway.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/HoP.FPrint.Gateway/obj/Debug/netcoreapp2.1/HoP.FPrint.Gateway.pdb" afterDir="false" />
     </list>
@@ -40,23 +35,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HoP.FPrint.Gateway/FPrintSerialPort/Services/FPrintSerialPortService.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="89" column="41" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
+            <state relative-caret-position="71">
+              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
               <folding>
-                <marker date="1551426484981" expanded="true" signature="6:96" ph="..." />
-                <marker date="1551426484981" expanded="true" signature="201:2761" ph="{...}" />
-                <marker date="1551426484981" expanded="true" signature="244:2759" ph="{...}" />
-                <marker date="1551426484981" expanded="true" signature="516:852" ph="{...}" />
-                <marker date="1551426484981" expanded="true" signature="577:777" ph="{...}" />
-                <marker date="1551426484981" expanded="true" signature="907:969" ph="{...}" />
-                <marker date="1551426484981" expanded="true" signature="1021:1165" ph="{...}" />
-                <marker date="1551426484981" expanded="true" signature="1262:1685" ph="{...}" />
-                <marker date="1551426484981" expanded="true" signature="1371:1666" ph="{...}" />
-                <marker date="1551426484981" expanded="true" signature="1740:2094" ph="{...}" />
-                <marker date="1551426484981" expanded="true" signature="2161:2343" ph="{...}" />
-                <marker date="1551426484981" expanded="true" signature="2371:2423" ph="{...}" />
-                <marker date="1551426484981" expanded="true" signature="2500:2621" ph="{...}" />
-                <marker date="1551426484981" expanded="true" signature="2689:2753" ph="{...}" />
+                <marker date="1551433598414" expanded="true" signature="6:96" ph="..." />
+                <marker date="1551433598414" expanded="true" signature="256:3256" ph="{...}" />
+                <marker date="1551433598414" expanded="true" signature="299:3254" ph="{...}" />
+                <marker date="1551433598414" expanded="true" signature="570:906" ph="{...}" />
+                <marker date="1551433598414" expanded="true" signature="631:831" ph="{...}" />
+                <marker date="1551433598414" expanded="true" signature="961:1023" ph="{...}" />
+                <marker date="1551433598414" expanded="true" signature="1075:1238" ph="{...}" />
+                <marker date="1551433598414" expanded="true" signature="1335:2083" ph="{...}" />
+                <marker date="1551433598414" expanded="true" signature="1444:2064" ph="{...}" />
+                <marker date="1551433598414" expanded="true" signature="1870:2023" ph="{...}" />
+                <marker date="1551433598414" expanded="true" signature="2138:2492" ph="{...}" />
+                <marker date="1551433598414" expanded="true" signature="2559:2741" ph="{...}" />
+                <marker date="1551433598414" expanded="true" signature="2769:2821" ph="{...}" />
+                <marker date="1551433598414" expanded="true" signature="2898:3071" ph="{...}" />
+                <marker date="1551433598414" expanded="true" signature="3139:3248" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -81,14 +77,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HoP.FPrint.Gateway/FingerPrintApi/Controllers/FingerPrintApiController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="20" column="24" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="24" />
+            <state relative-caret-position="192">
+              <caret line="12" column="28" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="28" />
               <folding>
-                <marker date="1551426517240" expanded="true" signature="6:132" ph="..." />
-                <marker date="1551426517240" expanded="true" signature="189:751" ph="{...}" />
-                <marker date="1551426517240" expanded="true" signature="277:749" ph="{...}" />
-                <marker date="1551426517240" expanded="true" signature="370:563" ph="{...}" />
-                <marker date="1551426517240" expanded="true" signature="661:743" ph="{...}" />
+                <marker date="1551433447845" expanded="true" signature="6:132" ph="..." />
+                <marker date="1551433447845" expanded="true" signature="189:782" ph="{...}" />
+                <marker date="1551433447845" expanded="true" signature="277:780" ph="{...}" />
+                <marker date="1551433447845" expanded="true" signature="370:594" ph="{...}" />
+                <marker date="1551433447845" expanded="true" signature="692:774" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -112,6 +108,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>_serialPort</find>
+      <find>getMess</find>
+      <find>_portalMessages</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -137,13 +135,13 @@
         <option value="$PROJECT_DIR$/HoP.FPrint.Gateway/FPrintSerialPort/FPrintOperationTypes.cs" />
         <option value="$PROJECT_DIR$/HoP.FPrint.Gateway/FPrintSerialPort/Enums/FPrintOperationTypes.cs" />
         <option value="$PROJECT_DIR$/HoP.FPrint.Gateway/FPrintSerialPort/Interfaces/IFPrintSerialPortService.cs" />
-        <option value="$PROJECT_DIR$/HoP.FPrint.Gateway/FPrintSerialPort/Services/FPrintSerialPortService.cs" />
         <option value="$PROJECT_DIR$/HoP.FPrint.Gateway/FingerPrintApi/Controllers/FingerPrintApiController.cs" />
+        <option value="$PROJECT_DIR$/HoP.FPrint.Gateway/FPrintSerialPort/Services/FPrintSerialPortService.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
+    <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -268,12 +266,12 @@
       <option name="presentableId" value="Default" />
       <updated>1551357545080</updated>
       <workItem from="1551357558177" duration="11299000" />
-      <workItem from="1551394295377" duration="7971000" />
+      <workItem from="1551394295377" duration="14444000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19270000" />
+    <option name="totallyTimeSpent" value="25743000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -286,7 +284,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2344932" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -296,7 +293,7 @@
       <window_info anchor="bottom" id="REST Client" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.15384616" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36497545" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -309,7 +306,7 @@
       <window_info anchor="bottom" id="Unit Tests" order="12" />
       <window_info anchor="bottom" id="Terminal" order="13" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Build" order="15" visible="true" weight="0.20949264" />
+      <window_info anchor="bottom" id="Build" order="15" weight="0.20949264" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -376,6 +373,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/HoP.FPrint.Gateway/FPrintSerialPort/Interfaces/IFPrintSerialPortService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/HoP.FPrint.Gateway/FPrintSerialPort/Enums/FPrintOperationTypes.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -387,46 +391,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HoP.FPrint.Gateway/FPrintSerialPort/Interfaces/IFPrintSerialPortService.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HoP.FPrint.Gateway/FPrintSerialPort/Services/FPrintSerialPortService.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="89" column="41" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
+        <state relative-caret-position="71">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
           <folding>
-            <marker date="1551426484981" expanded="true" signature="6:96" ph="..." />
-            <marker date="1551426484981" expanded="true" signature="201:2761" ph="{...}" />
-            <marker date="1551426484981" expanded="true" signature="244:2759" ph="{...}" />
-            <marker date="1551426484981" expanded="true" signature="516:852" ph="{...}" />
-            <marker date="1551426484981" expanded="true" signature="577:777" ph="{...}" />
-            <marker date="1551426484981" expanded="true" signature="907:969" ph="{...}" />
-            <marker date="1551426484981" expanded="true" signature="1021:1165" ph="{...}" />
-            <marker date="1551426484981" expanded="true" signature="1262:1685" ph="{...}" />
-            <marker date="1551426484981" expanded="true" signature="1371:1666" ph="{...}" />
-            <marker date="1551426484981" expanded="true" signature="1740:2094" ph="{...}" />
-            <marker date="1551426484981" expanded="true" signature="2161:2343" ph="{...}" />
-            <marker date="1551426484981" expanded="true" signature="2371:2423" ph="{...}" />
-            <marker date="1551426484981" expanded="true" signature="2500:2621" ph="{...}" />
-            <marker date="1551426484981" expanded="true" signature="2689:2753" ph="{...}" />
+            <marker date="1551433598414" expanded="true" signature="6:96" ph="..." />
+            <marker date="1551433598414" expanded="true" signature="256:3256" ph="{...}" />
+            <marker date="1551433598414" expanded="true" signature="299:3254" ph="{...}" />
+            <marker date="1551433598414" expanded="true" signature="570:906" ph="{...}" />
+            <marker date="1551433598414" expanded="true" signature="631:831" ph="{...}" />
+            <marker date="1551433598414" expanded="true" signature="961:1023" ph="{...}" />
+            <marker date="1551433598414" expanded="true" signature="1075:1238" ph="{...}" />
+            <marker date="1551433598414" expanded="true" signature="1335:2083" ph="{...}" />
+            <marker date="1551433598414" expanded="true" signature="1444:2064" ph="{...}" />
+            <marker date="1551433598414" expanded="true" signature="1870:2023" ph="{...}" />
+            <marker date="1551433598414" expanded="true" signature="2138:2492" ph="{...}" />
+            <marker date="1551433598414" expanded="true" signature="2559:2741" ph="{...}" />
+            <marker date="1551433598414" expanded="true" signature="2769:2821" ph="{...}" />
+            <marker date="1551433598414" expanded="true" signature="2898:3071" ph="{...}" />
+            <marker date="1551433598414" expanded="true" signature="3139:3248" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HoP.FPrint.Gateway/FingerPrintApi/Controllers/FingerPrintApiController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="24" />
+        <state relative-caret-position="192">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="28" />
           <folding>
-            <marker date="1551426517240" expanded="true" signature="6:132" ph="..." />
-            <marker date="1551426517240" expanded="true" signature="189:751" ph="{...}" />
-            <marker date="1551426517240" expanded="true" signature="277:749" ph="{...}" />
-            <marker date="1551426517240" expanded="true" signature="370:563" ph="{...}" />
-            <marker date="1551426517240" expanded="true" signature="661:743" ph="{...}" />
+            <marker date="1551433447845" expanded="true" signature="6:132" ph="..." />
+            <marker date="1551433447845" expanded="true" signature="189:782" ph="{...}" />
+            <marker date="1551433447845" expanded="true" signature="277:780" ph="{...}" />
+            <marker date="1551433447845" expanded="true" signature="370:594" ph="{...}" />
+            <marker date="1551433447845" expanded="true" signature="692:774" ph="{...}" />
           </folding>
         </state>
       </provider>

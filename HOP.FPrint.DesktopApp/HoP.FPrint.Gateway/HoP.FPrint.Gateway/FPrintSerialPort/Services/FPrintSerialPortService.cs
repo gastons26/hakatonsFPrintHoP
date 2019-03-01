@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO.Ports;
+using System.Linq.Expressions;
+using System.Threading;
 using HoP.FPrint.Gateway.FPrintSerialPort.Enums;
 
 namespace HoP.FPrint.Gateway.FPrintSerialPort.Services
@@ -9,7 +11,7 @@ namespace HoP.FPrint.Gateway.FPrintSerialPort.Services
     public class FPrintSerialPortService
     {
         private static SerialPort _serialPort;
-        private static IList<string> _portalMessages => new List<string>();
+        private static IList<string> _portalMessages = new List<string>();
 
         private static FPrintOperationTypes _operationType = FPrintOperationTypes.R;
 
@@ -33,7 +35,7 @@ namespace HoP.FPrint.Gateway.FPrintSerialPort.Services
 
         public static IList<string> GetMessages()
         {
-            var messages = _portalMessages;
+            var messages = new List<string>(_portalMessages); 
             
             _portalMessages.Clear();
 
@@ -48,8 +50,17 @@ namespace HoP.FPrint.Gateway.FPrintSerialPort.Services
                 case FPrintOperationTypes.R:
                     OpenHopUrl(serialPort.ReadExisting());
                     break;
-                case FPrintOperationTypes.U:
-                    _portalMessages.Add(serialPort.ReadLine());
+                case FPrintOperationTypes.C:
+                    var message  = _serialPort.ReadLine();
+
+                    Console.WriteLine(message);
+                    _portalMessages.Add(message);
+                    
+                    if (message.StartsWith("I:Stored!"))
+                    {
+                        Thread.Sleep(2000);
+                        _operationType = FPrintOperationTypes.R;
+                    }
                     break;
             }         
         }
@@ -82,11 +93,13 @@ namespace HoP.FPrint.Gateway.FPrintSerialPort.Services
         public static void SetOperation(FPrintOperationTypes operationType)
         {
             _operationType = operationType; 
+            Console.WriteLine($"{_operationType}");
             _serialPort.WriteLine($"{_operationType}");
         }
 
         public static void SendMessageToSerialPort(string message)
         {
+            Console.WriteLine($"{message}");
             _serialPort.WriteLine(message);
         }
     }
