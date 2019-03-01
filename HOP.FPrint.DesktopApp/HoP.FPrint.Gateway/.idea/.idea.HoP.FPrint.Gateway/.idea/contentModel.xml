@@ -15,8 +15,8 @@
           </e>
         </e>
         <e p="FPrintSerialPort" t="Include">
-          <e p="Interfaces" t="Include">
-            <e p="IFPrintSerialPortService.cs" t="Include" />
+          <e p="enums" t="Include">
+            <e p="FPrintOperationTypes.cs" t="Include" />
           </e>
           <e p="Services" t="Include">
             <e p="FPrintSerialPortService.cs" t="Include" />
