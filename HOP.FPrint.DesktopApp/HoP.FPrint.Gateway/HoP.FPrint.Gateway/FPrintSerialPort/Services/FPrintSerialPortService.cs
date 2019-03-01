@@ -1,13 +1,17 @@
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO.Ports;
-using HoP.FPrint.Gateway.FPrintSerialPort.Interfaces;
+using HoP.FPrint.Gateway.FPrintSerialPort.Enums;
 
 namespace HoP.FPrint.Gateway.FPrintSerialPort.Services
 {
-    public class FPrintSerialPortService : IFPrintSerialPortService
+    public class FPrintSerialPortService
     {
-        private readonly SerialPort _serialPort;
+        private static SerialPort _serialPort;
+        private static IList<string> _portalMessages => new List<string>();
+
+        private static FPrintOperationTypes _operationType = FPrintOperationTypes.R;
 
         public FPrintSerialPortService(string portName)
         {
@@ -20,11 +24,34 @@ namespace HoP.FPrint.Gateway.FPrintSerialPort.Services
             };
             _serialPort.DataReceived += SerialPortDataReceiver;
         }
-        
+
+        public static void AddMessage(string message)
+        {
+            _portalMessages.Add(message);
+        }
+
+
+        public static IList<string> GetMessages()
+        {
+            var messages = _portalMessages;
+            
+            _portalMessages.Clear();
+
+            return messages;
+        }
         private static void SerialPortDataReceiver(object sender, SerialDataReceivedEventArgs e)
         {
             var serialPort = (SerialPort) sender;
-            OpenHopUrl(serialPort.ReadExisting());            
+            
+            switch (_operationType)
+            {
+                case FPrintOperationTypes.R:
+                    OpenHopUrl(serialPort.ReadExisting());
+                    break;
+                case FPrintOperationTypes.U:
+                    _portalMessages.Add(serialPort.ReadLine());
+                    break;
+            }         
         }
 
         private static void OpenHopUrl(string userId)
@@ -52,9 +79,15 @@ namespace HoP.FPrint.Gateway.FPrintSerialPort.Services
             _serialPort.Open();
         }
 
-        public void SendLineToSerialPort(string lineText)
+        public static void SetOperation(FPrintOperationTypes operationType)
         {
-            _serialPort.WriteLine(lineText);
+            _operationType = operationType; 
+            _serialPort.WriteLine($"{_operationType}");
+        }
+
+        public static void SendMessageToSerialPort(string message)
+        {
+            _serialPort.WriteLine(message);
         }
     }
 }
