@@ -6,6 +6,7 @@ const String CREATE = "C";
 const String READ   = "R";
 const String UPDATE = "U";
 const String DELETE = "D";
+const String DELETEALL = "DA";
 
 const String ERRMSG = "E:";
 const String FFOUND = "OK:";
@@ -44,34 +45,30 @@ void loop() {
   
 
   if (stringComplete && currentCommand == CREATE) {
-//    Serial.println(CREATE + " mode, provide new fingerid");
     id = readnumber();
     if (id == 0) {
       resetState();
       return;
     }
-//    Serial.print("Enrolling ID #");
     while (!  getFingerprintEnroll() );
   
     resetState();
   } else if (stringComplete && currentCommand == UPDATE) {
-//    Serial.println(UPDATE + " mode, provide fingerid");
-    
     resetState();
   } else if (stringComplete && currentCommand == DELETE) {
-//    Serial.println(DELETE + " mode, provide fingerid");
-//    Serial.println("Please type in the ID # (from 1 to 127) you want to delete...");
     id = readnumber();
-    if (id == 0) {// ID #0 not allowed, try again!
+    if (id == 0) {
        resetState();
        return;
     }
     deleteFingerprint(id);
     
     resetState();
+  } else if (stringComplete && currentCommand == DELETEALL) {
+    finger.emptyDatabase();
+    resetState();
   } else {
     getFingerprintIDez();
-//    delay(50);
     resetState();
   }
 
@@ -351,8 +348,7 @@ void serialEvent() {
     
     if (inChar == '\n') {
       stringComplete = true;
-      if (inputString == CREATE || inputString == UPDATE || inputString == DELETE) {
-//        Serial.println(MTAG + "serialEvent::set currentCommand=" + inputString);
+      if (inputString == CREATE || inputString == UPDATE || inputString == DELETE  || inputString == DELETEALL) {
         currentCommand = inputString;
       }
     } else {
