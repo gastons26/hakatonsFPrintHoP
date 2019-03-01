@@ -1,7 +1,6 @@
-﻿using System;
-using System.Diagnostics;
-using System.IO.Ports;
-using System.Threading;
+﻿using HoP.FPrint.Gateway.AppStart;
+using HoP.FPrint.Gateway.FPrintSerialPort.Services;
+using Microsoft.AspNetCore.Hosting;
 
 namespace HoP.FPrint.Gateway
 {
@@ -9,53 +8,15 @@ namespace HoP.FPrint.Gateway
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-
-            foreach (var pName in SerialPort.GetPortNames())
-            {
-                Console.WriteLine(pName);
-            }
+            new FPrintSerialPortService("COM3").Open();
             
-            ConnectToPort("COM6");
-            ConnectToPort("COM3");
+            var host = new WebHostBuilder()
+                .UseKestrel()
+                .UseIISIntegration()
+                .UseStartup<StartUp>().Build();
             
-
-            Console.ReadKey();
+            host.Run();
         }
 
-        
-        public static void ConnectToPort(string portName)
-        {
-            var serialPort = new SerialPort(portName)
-            {
-                BaudRate = 9600,
-                Parity = Parity.None,
-                StopBits = StopBits.One,
-                DataBits = 8,
-                Handshake = Handshake.None
-            };
-
-            serialPort.DataReceived += SerialPortDataReciever;
-           
-            
-            serialPort.Open();
-            Thread.Sleep(3000);
-            serialPort.WriteLine("a");
-        }
-
-        private static void SerialPortDataReciever(object sender, SerialDataReceivedEventArgs e)
-        {
-            var serialPort = (SerialPort) sender;
-
-            var serialdata = serialPort.ReadExisting();
-
-            Console.WriteLine(serialdata);
-
-            var url = $"https://hop-fp.visma.lv/{serialdata}";
-            
-            var prs = new ProcessStartInfo("cmd", $"/c start {url}");
-            
-            Process.Start(prs);
-        }
     }
 }

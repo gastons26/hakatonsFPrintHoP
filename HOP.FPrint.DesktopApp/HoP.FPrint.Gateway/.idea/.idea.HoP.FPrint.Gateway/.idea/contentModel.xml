@@ -5,7 +5,23 @@
     <e p="C:\Users\Lattelecom\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_HoP.FPrint.Gateway.715570572.00" t="ExcludeRecursive" />
     <e p="C:\WORK\hakatonsFPrintHoP\HOP.FPrint.DesktopApp\HoP.FPrint.Gateway" t="IncludeFlat">
       <e p="HoP.FPrint.Gateway" t="IncludeRecursive">
+        <e p="AppStart" t="Include">
+          <e p="StartUp.cs" t="Include" />
+        </e>
         <e p="bin" t="ExcludeRecursive" />
+        <e p="FingerPrintApi" t="Include">
+          <e p="Controllers" t="Include">
+            <e p="FingerPrintApiController.cs" t="Include" />
+          </e>
+        </e>
+        <e p="FPrintSerialPort" t="Include">
+          <e p="Interfaces" t="Include">
+            <e p="IFPrintSerialPortService.cs" t="Include" />
+          </e>
+          <e p="Services" t="Include">
+            <e p="FPrintSerialPortService.cs" t="Include" />
+          </e>
+        </e>
         <e p="HoP.FPrint.Gateway.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

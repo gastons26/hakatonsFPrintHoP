@@ -9,3 +9,6 @@ C:\WORK\hakatonsFPrintHoP\HOP.FPrint.DesktopApp\HoP.FPrint.Gateway\HoP.FPrint.Ga
 C:\WORK\hakatonsFPrintHoP\HOP.FPrint.DesktopApp\HoP.FPrint.Gateway\HoP.FPrint.Gateway\obj\Debug\netcoreapp2.1\HoP.FPrint.Gateway.AssemblyInfo.cs
 C:\WORK\hakatonsFPrintHoP\HOP.FPrint.DesktopApp\HoP.FPrint.Gateway\HoP.FPrint.Gateway\obj\Debug\netcoreapp2.1\HoP.FPrint.Gateway.dll
 C:\WORK\hakatonsFPrintHoP\HOP.FPrint.DesktopApp\HoP.FPrint.Gateway\HoP.FPrint.Gateway\obj\Debug\netcoreapp2.1\HoP.FPrint.Gateway.pdb
+C:\WORK\hakatonsFPrintHoP\HOP.FPrint.DesktopApp\HoP.FPrint.Gateway\HoP.FPrint.Gateway\obj\Debug\netcoreapp2.1\HoP.FPrint.Gateway.RazorAssemblyInfo.cache
+C:\WORK\hakatonsFPrintHoP\HOP.FPrint.DesktopApp\HoP.FPrint.Gateway\HoP.FPrint.Gateway\obj\Debug\netcoreapp2.1\HoP.FPrint.Gateway.RazorAssemblyInfo.cs
+C:\WORK\hakatonsFPrintHoP\HOP.FPrint.DesktopApp\HoP.FPrint.Gateway\HoP.FPrint.Gateway\obj\Debug\netcoreapp2.1\HoP.FPrint.Gateway.RazorTargetAssemblyInfo.cache
